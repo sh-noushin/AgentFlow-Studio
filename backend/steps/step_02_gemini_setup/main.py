@@ -1,3 +1,5 @@
+
+#should be installed : python -m pip install python-dotenv
 from dotenv import load_dotenv
 from google import genai
 
