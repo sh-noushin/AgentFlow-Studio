@@ -1,6 +1,7 @@
 from mcp.server import MCPServer
 
-mcp = FastMCP("AgentFlow MCP Tools")
+
+mcp = MCPServer("AgentFlow MCP Tools")
 
 
 @mcp.tool()
@@ -29,7 +30,3 @@ def get_order_status(order_id: int) -> str:
         order_id,
         "Order not found"
     )
-
-
-if __name__ == "__main__":
-    mcp.run()
